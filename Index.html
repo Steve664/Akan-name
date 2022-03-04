@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/Akan.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="content">
         <div class="container">
+            <form onsubmit="akanName()">
+
+                Day:
+                <input type="number" name="day" id="dayOfBirth" placeholder="DD">
+                Month:
+                <input type="number" name="month" id="monthOf" placeholder="MM">
+                Year:
+                <input type="number" name="year" id="yearOf" placeholder="YYYY">
+                <br>
+                <input type="radio" value="male" id="male">Male
+                <br>
+                <input type="radio" value="female" id="female">Female 
+                <br> 
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
            
         </div>
     </div>
