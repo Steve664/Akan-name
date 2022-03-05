@@ -16,8 +16,13 @@ function akanName() {
 
         function validDay() {
             if (dayOf < 0 || dayOf > 31) { 
-                return false; }
-            else if (monthOf == 2 && dayOf > 29) {
+                return false; 
+            }
+                //to handle for leap year
+            else if (yearOf%4==0 && monthOf == 2 && dayOf > 29) {
+                return false;
+            }
+            else if (monthOf == 2 && dayOf > 28) {
                 return false;
             }
         
