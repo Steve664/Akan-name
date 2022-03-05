@@ -13,7 +13,8 @@
 <body>
     <div class="content">
         <div class="container">
-            <form onsubmit="akanName()">
+            <h1>Hello</h1>
+            <form action="" id = "myForm">
 
                 Day:
                 <input type="number" name="day" id="dayOfBirth" placeholder="DD" required>
@@ -28,13 +29,13 @@
                 <input type="radio" value="female" id="female" name="gender" required>Female 
                 <br>
                 <br> 
-                <button type="submit">Submit</button>
+                <button type="submit" class="button-18" onclick="akanName()">Submit</button>
                 <br>
-                <button type="reset">Reset</button>
+                <button type="reset" class="button-18">Reset</button>
 
             </form>
            <h3 id="output"></h3>
-           <h3 id="error"></h3>
+           <p id="result"></p>
         </div>
     </div>
 </body>

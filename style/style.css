@@ -8,9 +8,15 @@
     border-color:#000000;
     border-radius: 0.5%;
   }
-
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
   .container{
     width: 80%;
     margin: auto;
+  }
+
+  #result{
+      font-size: 18px;
   }
   
