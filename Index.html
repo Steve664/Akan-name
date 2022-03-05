@@ -16,16 +16,16 @@
             <form onsubmit="akanName()">
 
                 Day:
-                <input type="number" name="day" id="dayOfBirth" placeholder="DD">
+                <input type="number" name="day" id="dayOfBirth" placeholder="DD" required>
                 Month:
-                <input type="number" name="month" id="monthOf" placeholder="MM">
+                <input type="number" name="month" id="monthOf" placeholder="MM" required>
                 Year:
-                <input type="number" name="year" id="yearOf" placeholder="YYYY">
+                <input type="number" name="year" id="yearOf" placeholder="YYYY" required>
                 <br>
                 <br>
-                <input type="radio" value="male" id="male" name="gender">Male
+                <input type="radio" value="male" id="male" name="gender" required>Male
                 <br>
-                <input type="radio" value="female" id="female" name="gender">Female 
+                <input type="radio" value="female" id="female" name="gender" required>Female 
                 <br>
                 <br> 
                 <button type="submit">Submit</button>
@@ -34,6 +34,7 @@
 
             </form>
            <h3 id="output"></h3>
+           <h3 id="error"></h3>
         </div>
     </div>
 </body>
