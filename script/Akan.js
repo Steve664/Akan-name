@@ -13,7 +13,7 @@ function akanName() {
     function handleForm(event) { event.preventDefault(); }
     form.addEventListener('submit', handleForm);
 
-   // let day = Math.floor((((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (monthOf + 1) / 10)) + dayOf) % 7);
+    // let day = Math.floor((((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (monthOf + 1) / 10)) + dayOf) % 7);
     // function to get gender
     function getGender() {
         for (let gender of genders) {
@@ -22,19 +22,19 @@ function akanName() {
             }
         }
     }
-//formula to calculate day of the week
-    function dayofweek(){
-    
-    let t = [ 0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4 ];
-    yearOf -= (monthOf < 3) ? 1 : 0;
-  return (yearOf + yearOf/4 - yearOf/100 + yearOf/400 + t[monthOf-1] + dayOf)%7; 
+    //formula to calculate day of the week
+    function dayofweek() {
 
-}
-    
+        let t = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4];
+        yearOf -= (monthOf < 3) ? 1 : 0;
+        return (yearOf + yearOf / 4 - yearOf / 100 + yearOf / 400 + t[monthOf - 1] + dayOf) % 7;
+
+    }
 
 
-//for debugging
-    console.log(dayOf+" "+monthOf+" "+yearOf+"  "+ day);
+
+    //for debugging
+    console.log(dayOf + " " + monthOf + " " + yearOf + "  " + day);
     let genderValue = getGender();
 
 
@@ -55,7 +55,7 @@ function akanName() {
         }
         //to handle for leap year
         else if (leapYear && monthOf == 2 && dayOf > 29) {
-            
+
             return false;
         }
         else if (monthOf == 2 && dayOf > 28 && !(leapYear)) {
@@ -72,30 +72,29 @@ function akanName() {
         if ((0 == yearOf % 4) && (0 != yearOf % 100) || (0 == yearOf % 400)) {
             return true;
         } else {
-           return false;
+            return false;
         }
     }
 
     let dayVal = validDay();
     let monVal = validMonth();
-    
-    if (leapYear){
-     var day = Math.round(dayofweek()-1);
-     }
-     else{
-       var day = Math.round(dayofweek());  
-     }
+
+    if (leapYear) {
+        var day = Math.round(dayofweek() - 1);
+    }
+    else {
+        var day = Math.round(dayofweek());
+    }
 
     if (genderValue == "male" && monVal && dayVal) {
         document.getElementById('result').innerHTML = "Your birthday was on a " + weekDay[day] + " , so your Akan name is " + maleNames[day];
-        document.getElementById('output').innerHTML = "Your Akan name is: ";
-        document.querySelector('h1').innerHTML = "Hi" + " " + maleNames[day]+"!!";
+        document.getElementById('output').innerHTML = "Your Akan name is: "+ maleNames[day];
+        
         return false;
     } else if (genderValue == "female" && monVal && dayVal) {
         document.getElementById('result').innerHTML = "Your birthday was on a " + weekDay[day] + " , your Akan name is " + femaleNames[day];
-        document.getElementById('output').innerHTML = "Your Akan Name is: ";
+        document.getElementById('output').innerHTML = "Your Akan Name is: " + femaleNames[day];
 
-        document.querySelector('h1').innerHTML = "Hi" + " "+ femaleNames[day]+"!!";
         return false;
     } else {
         document.getElementById('result').innerHTML = "Oops You entered an invalid day or month. Press reset and try again";
