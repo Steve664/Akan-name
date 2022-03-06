@@ -31,7 +31,7 @@ function akanName() {
 
 }
     
-let day = Math.round(dayofweek());
+
 
 //for debugging
     console.log(dayOf+" "+monthOf+" "+yearOf+"  "+ day);
@@ -58,7 +58,7 @@ let day = Math.round(dayofweek());
             
             return false;
         }
-        else if (monthOf == 2 && dayOf > 28 {
+        else if (monthOf == 2 && dayOf > 28) {
             return false;
         }
         else {
@@ -75,8 +75,16 @@ let day = Math.round(dayofweek());
            return false;
         }
     }
+
     let dayVal = validDay();
     let monVal = validMonth();
+    
+    if (leapYear){
+     var day = Math.round(dayofweek()-1);
+     }
+     else{
+       var day = Math.round(dayofweek());  
+     }
 
     if (genderValue == "male" && monVal && dayVal) {
         document.getElementById('result').innerHTML = "You were born on a " + weekDay[day] + " , your Akan name is " + maleNames[day];
