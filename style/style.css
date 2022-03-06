@@ -10,9 +10,11 @@
     border-radius: 1%;
   }
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     background-image: url("../Images/index.jpg");
+    
+    
 }
   .container{
     width: 80%;
@@ -30,3 +32,4 @@ body{
     padding: 10px 24px;
     width: 100px;
   }
+  
