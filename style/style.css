@@ -1,15 +1,17 @@
 .content{
-    background-color: rgba(206, 17, 38, 0.72);
+    background-color: #152733;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10px;
     margin-bottom: auto;
     padding: 20px;
-    border-color:#000000;
-    border-radius: 0.5%;
+    border: 5px;
+    border-color:#fff;
+    border-radius: 1%;
   }
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
 }
   .container{
     width: 80%;

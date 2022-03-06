@@ -58,7 +58,7 @@ function akanName() {
             
             return false;
         }
-        else if (monthOf == 2 && dayOf > 28) {
+        else if (monthOf == 2 && dayOf > 28 && !(leapYear)) {
             return false;
         }
         else {
