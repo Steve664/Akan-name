@@ -98,7 +98,7 @@ function akanName() {
         document.querySelector('h1').innerHTML = "Hi" + " "+ femaleNames[day]+"!!";
         return false;
     } else {
-        document.getElementById('result').innerHTML = "You entered an invalid day or month. Press reset and try again";
+        document.getElementById('result').innerHTML = "Oops You entered an invalid day or month. Press reset and try again";
     }
 
 
