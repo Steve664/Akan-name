@@ -46,23 +46,35 @@ let day = Math.round(dayofweek());
             return true;
         }
     }
+
+    let leapYear = checkLeapYear();
+
     function validDay() {
         if (dayOf < 0 || dayOf > 31) {
             return false;
         }
         //to handle for leap year
-        else if (yearOf % 4 == 0 && monthOf == 2 && dayOf > 29) {
+        else if (leapYear && monthOf == 2 && dayOf > 29) {
             
             return false;
         }
-        else if (monthOf == 2 && dayOf > 28 && yearOf%4!=0) {
+        else if (monthOf == 2 && dayOf > 28 {
             return false;
         }
         else {
             return true;
         }
     }
+    // check if leap year
+    function checkLeapYear() {
 
+        //three conditions to find out the leap year
+        if ((0 == yearOf % 4) && (0 != yearOf % 100) || (0 == yearOf % 400)) {
+            return true;
+        } else {
+           return false;
+        }
+    }
     let dayVal = validDay();
     let monVal = validMonth();
 
@@ -75,7 +87,7 @@ let day = Math.round(dayofweek());
         document.getElementById('result').innerHTML = "You were born on a " + weekDay[day] + " , your Akan name is " + femaleNames[day];
         document.getElementById('output').innerHTML = "Here is your Akan name: ";
 
-        document.querySelector('h1').innerHTML = "Hello" + " " + femaleNames[day];
+        document.querySelector('h1').innerHTML = "Hello" + "<p>  < /p>"+ femaleNames[day];
         return false;
     } else {
         alert("You entered an invalid day or month, please try again");
