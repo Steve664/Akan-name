@@ -87,15 +87,15 @@ function akanName() {
      }
 
     if (genderValue == "male" && monVal && dayVal) {
-        document.getElementById('result').innerHTML = "You were born on a " + weekDay[day] + " , your Akan name is " + maleNames[day];
-        document.getElementById('output').innerHTML = "Here is your Akan name: ";
-        document.querySelector('h1').innerHTML = "Hello" + " " + maleNames[day];
+        document.getElementById('result').innerHTML = "Your birthday was on a " + weekDay[day] + " , so your Akan name is " + maleNames[day];
+        document.getElementById('output').innerHTML = "Your Akan name is: ";
+        document.querySelector('h1').innerHTML = "Hi" + " " + maleNames[day]+"!!";
         return false;
     } else if (genderValue == "female" && monVal && dayVal) {
-        document.getElementById('result').innerHTML = "You were born on a " + weekDay[day] + " , your Akan name is " + femaleNames[day];
-        document.getElementById('output').innerHTML = "Here is your Akan name: ";
+        document.getElementById('result').innerHTML = "Your birthday was on a " + weekDay[day] + " , your Akan name is " + femaleNames[day];
+        document.getElementById('output').innerHTML = "Your Akan Name is: ";
 
-        document.querySelector('h1').innerHTML = "Hello" + "<p>  < /p>"+ femaleNames[day];
+        document.querySelector('h1').innerHTML = "Hi" + " "+ femaleNames[day]+"!!";
         return false;
     } else {
         alert("You entered an invalid day or month, please try again");
