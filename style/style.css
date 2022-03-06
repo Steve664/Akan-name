@@ -12,13 +12,21 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #fff;
+    background-image: url("../Images/index.jpg");
 }
   .container{
     width: 80%;
     margin: auto;
+  }
+  h1{
+      text-align: center;
   }
 
   #result{
       font-size: 18px;
   }
   
+  button{
+    padding: 10px 24px;
+    width: 100px;
+  }
