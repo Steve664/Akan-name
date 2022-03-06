@@ -50,7 +50,7 @@ function akanName() {
     let leapYear = checkLeapYear();
 
     function validDay() {
-        if (dayOf < 0 || dayOf > 31) {
+        if (dayOf <= 0 || dayOf > 31) {
             return false;
         }
         //to handle for leap year
@@ -97,7 +97,8 @@ function akanName() {
 
         return false;
     } else {
-        document.getElementById('result').innerHTML = "Oops You entered an invalid day or month. Press reset and try again";
+        
+        alert("Oops You entered an invalid day or month. Please try again");
     }
 
 
