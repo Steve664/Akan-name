@@ -10,14 +10,32 @@
   <li><a href="#installation">Installation</a></li>
   <li><a href="#requirements">Requirements</a></li>
   <li><a href="#technology-used">Technology Used</a></li>
+ <li><a href="Behaviour Driven Development">BDD</a></li>
   <li><a href="#license">License</a></li>
   <li><a href="#author-info">Author Info</a></li>
 
  </ol>
  
  ## Description
- <p>This is a website that generates a users Akan Name based pon the date they input. It is written using HTML, CSS and Javascript. </p>
+ <p>The Akan people of Ghana frequently name their children after the day of the week they were born. These "day names" have further meanings concerning the soul and character of the person. This website generates a users Akan Name based on the date they input. It is written using HTML, CSS and Javascript. </p>
  
+ ## Behaviour Driven Development
+
+1. Displays Form For Entering Date and Gender
+   - INPUT: "User's Birthdate Entered"
+   - INPUT: "User's Gender Entered"
+   - OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
+2. Displays an Error Message if Date Input Left Blank
+   - INPUT: ""
+   - OUTPUT: "Displays Error Message"
+3. Displays an Error Message if Gender Not Chosen
+   - INPUT: "" 
+   - OUTPUT: "Display an Error Message" 
+4. Clears Form and Reset the Message on Click
+   - INPUT: "Click Reset Button" 
+   - OUTPUT: "Clears and Resets the Form"
+   
+ <p align="right">(<a href="#top">back to top</a>)</p>
  
  ## Installation
  
