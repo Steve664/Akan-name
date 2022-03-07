@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="Images/afrobeat.png" type="image/x-icon">
-    <script src="script/Akan.js"></script>
-    <title>Akan Name</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="shortcut icon" href="Images/afrobeat.png" type="image/x-icon">
+        <script src="script/Akan.js"></script>
+        <title>Akan Name</title>
+    </head>
 
-<body>
-    <div class="content">
-        <div class="container">
-            <center>
-                <img src="Images/afrobeat.png" width="100px" height="100px" alt="">
-            </center>
-            <h1>Find your Akan name</h1>
-            <p>Hi, this application will take your date of birth and generate an Akan name for you.
-                Akan names are derived from Ghanian culture. Frequently in Ghana, children are given
-                their first name as a 'day name' which corresponds to the day in the week they were born. Here are
-                Ghanian day names.
-                These "day names" have further meanings concerning the soul and character of the person.
-            </p>
-            <br>
-            <p></p>
-            <center>
-                <form action="" id="myForm">
-
-
-                    <label for="day">Day:</label>
-                    <input type="number" name="day" id="dayOfBirth" placeholder="DD" required>
-                    <label for="month">Month:</label>
-                    <input type="number" name="month" id="monthOf" placeholder="MM" required>
-                    <label for="year">Year:</label>
-                    <input type="number" name="year" id="yearOf" placeholder="YYYY" required>
-
-                    <br>
-                    <br>
-                    <input type="radio" value="male" id="male" name="gender" required>Male
-                    <br>
-                    <input type="radio" value="female" id="female" name="gender" required>Female
-                    <br>
-                    <br>
-                    <button type="submit" class="button" onclick="akanName()">Submit</button>
-                    <br>
-                    <br>
-                    <button type="reset" class="button">Reset</button>
-
-                </form>
-                <h3 id="output"></h3>
-                <p id="result"></p>
-            </center>
+    <body>
+        <div class="content">
+            <div class="container">
+                <center>
+                    <img src="Images/afrobeat.png" width="100px" height="100px" alt="">
+                </center>
+                <h1>Find your Akan name</h1>
+                <p> Hi, this application will take your date of birth and generate an Akan name for you. 
+                    Akan names are derived from Ghanian culture. Frequently in Ghana, children are given 
+                    their first name as a 'day name' which corresponds to the day in the week they were born. 
+                    These "day names" have further meanings concerning the soul and character of the person.</p>
+                <br>
+                <p>Enter you bithday then select you gender and your Akan Name will be generated.</p>
+                <center>
+                    <form action="" id="myForm">
+                        <label for="day">Day:</label>
+                        <input type="number" name="day" id="dayOfBirth" placeholder="DD" required>
+                        <label for="month">Month:</label>
+                        <input type="number" name="month" id="monthOf" placeholder="MM" required>
+                        <label for="year">Year:</label>
+                        <input type="number" name="year" id="yearOf" placeholder="YYYY" required>
+                        <br>
+                        <br>
+                        <input type="radio" value="male" id="male" name="gender" required>
+                        Male
+                        <br>
+                        <input type="radio" value="female" id="female" name="gender" required>
+                        Female
+                        <br>
+                        <br>
+                        <button type="submit" class="button" onclick="akanName()">Submit</button>
+                        <br>
+                        <br>
+                        <button type="reset" class="button">Reset</button>
+                    </form>
+                    <h3 id="output"></h3>
+                    <p id="result"></p>
+                </center>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>

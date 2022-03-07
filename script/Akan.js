@@ -5,6 +5,8 @@ function akanName() {
     let genders = document.getElementsByName("gender");
     let dayOf = Number(document.getElementById("dayOfBirth").value);
     let monthOf = Number(document.getElementById("monthOf").value);
+    let leapYear = checkLeapYear();
+    let genderValue = getGender();
     let weekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
@@ -30,14 +32,9 @@ function akanName() {
         return (yearOf + yearOf / 4 - yearOf / 100 + yearOf / 400 + t[monthOf - 1] + dayOf) % 7;
 
     }
-
-
-
     //for debugging
     console.log(dayOf + " " + monthOf + " " + yearOf + "  " + day);
-    let genderValue = getGender();
-
-
+    
     function validMonth() {
         if (monthOf < 1 || monthOf > 12) {
             return false;
@@ -46,8 +43,6 @@ function akanName() {
             return true;
         }
     }
-
-    let leapYear = checkLeapYear();
 
     function validDay() {
         if (dayOf <= 0 || dayOf > 31) {
@@ -96,12 +91,19 @@ function akanName() {
         document.getElementById('output').innerHTML = "Your Akan Name is: " + femaleNames[day];
 
         return false;
-    } else {
-        
-        alert("Oops You entered an invalid day or month. Please try again");
+    } 
+    else if (genderValue == null){
+        document.getElementById('output').innerHTML = "";
+        document.getElementById('result').innerHTML = "Oops you haven't entered a gender. Please try again";
+        alert("Oops you haven't entered a gender.. Please try again");
+
     }
 
-
+    else {
+        document.getElementById('result').innerHTML = "Oops you haven't entered a gender. Please try again";
+        document.getElementById('output').innerHTML = "";
+        alert("Oops You entered an invalid day or month. Please try again");
+    }
 
 }
 
