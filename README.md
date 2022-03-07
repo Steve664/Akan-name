@@ -19,10 +19,9 @@
  
  ## Description
  <p>The Akan people of Ghana frequently name their children after the day of the week they were born. These "day names" have further meanings concerning the soul and character of the person. This website generates a users Akan Name based on the date they input. It is written using HTML, CSS and Javascript. </p>
- 
-  <p align="center">(steve664.github.io/akan-name)</p>
+ <p align="left">(<a href="steve664.github.io/akan-name">Live Link</a>)</p>
 
- ## Behaviour Driven Development
+## Behaviour Driven Development
 
 1. Displays Form For Entering Date and Gender
    - INPUT: "User's Birthdate Entered"
