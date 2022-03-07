@@ -43,11 +43,10 @@
 To use the app, open the Github Pages link provided below on the README.
 Follow the below steps to set up this application
 * Step 1 : Clone this repository using **`https://github.com/Steve664/Akan-name.git`**, or download a ZIP file of the code.
-* Step 2 : The repository, if downloaded as a .zip file will need to be extracted  and opened
-* Step 3 : Open the index.html file to view the application on your preferred web browser and have fun!
- 
+* Step 2 : The repository, if downloaded as a .zip file will need to be extracted and opened
+* Step 3 : Open the index.html file to view the application on a web browser.
  ## Requirements
-<p>The requirements to run this project is a browser and an internet connection as some icons and images need to be retrieved</p>
+<p>A browser</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
