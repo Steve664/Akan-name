@@ -20,7 +20,7 @@
  ## Description
  <p>The Akan people of Ghana frequently name their children after the day of the week they were born. These "day names" have further meanings concerning the soul and character of the person. This website generates a users Akan Name based on the date they input. It is written using HTML, CSS and Javascript. </p>
  
-  <p align="right">steve664.github.io/akan-name</p>
+  <p align="center">(steve664.github.io/akan-name)</p>
 
  ## Behaviour Driven Development
 
